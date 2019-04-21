@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<!-- Note: Site is the default if client is not specified -->
+	<name>Properties Search</name>
+	<creationDate>16-02-2011</creationDate>
+	<author>John Doe</author>
+	<authorEmail>fabiouz@gmail.com</authorEmail>
+	<authorUrl>http://www.yexey.com</authorUrl>
+	<copyright>Copyright (c) 2006 - 2012 YexeY All rights reserved.</copyright>
+	<license>License Info</license>
+	<version>5.20120423</version>
+	<description>MOD_PROP_SEARCH_DESCRIPTION</description>
+	<scriptfile>prop_search.scriptfile.php</scriptfile> <!-- New for 1.6 -->
+
+	<files>
+		<filename module="mod_prop_search">mod_prop_search.php</filename>
+		<filename module="mod_prop_search">helper.php</filename>
+		<filename module="mod_prop_search">index.html</filename>
+		<folder>css</folder>
+		<folder>tmpl</folder>
+	</files>
+
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_prop_search.ini</language>
+		<language tag="es-ES">es-ES.mod_prop_search.ini</language>
+		<language tag="it-IT">it-IT.mod_prop_search.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_properties/models/fields">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<field name="goToMenu" type="menuitem" disable="separator" label="MOD_PROP_SEARCH_FIELD_REDIRECTURL_LABEL" description="MOD_PROP_SEARCH_FIELD_REDIRECTURL_DESC">
+					<option	value="">JDEFAULT</option>
+				</field>
+				
+		<field name="goToPropertyDetails" default="category" type="list" label="COM_PROPERTIES_MENU_REDIRECTURL_LABEL" description="COM_PROPERTIES_MENU_REDIRECTURL_DESC">
+					<option value="category">Category</option>
+					<option value="categoryprodduct">Category - prodduct</option>	
+					<option value="properties">Properties</option>
+					<option value="property">Property</option>				
+				</field>
+		
+		
+		<field name="showSelectCountry" type="radio" default="1" label="Country" description="Do you want to use the country selector list?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>	
+		<field name="idCountryDefault" type="text" default="" size="3" label="id Country Default" description="id Country Default" />			
+		<field name="showSelectState" type="radio" default="1" label="State" description="Do you want to use the state selector list?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>	
+		<field name="idStateDefault" type="text" default="" size="3" label="id State Default" description="id State Default" />	
+		<field name="showSelectLocality" type="radio" default="1" label="Locality" description="Do you want to use the locality selector list?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="idLocalityDefault" type="text" default="" size="3" label="id Locality Default" description="id Locality Default" />
+		<field name="showSelectCategory" type="radio" default="1" label="Categories list" description="Do you want to use the category/property type selector list?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="showSelectType" type="radio" default="1" label="Types list" description="Do you want to use the type/property type selector list?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="showParentType" type="radio" default="0" label="Parent Category Type" description="Do you want to use the Parent Category type/property type selector list?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showSelectBedrooms" type="radio" default="1" label="Bedrooms list" description="Do you want to use the bedrooms list?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>				
+		<field name="showSelectBathrooms" type="radio" default="1" label="Bathrooms list" description="Do you want to use the bathrooms list?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="showSelectParking" type="radio" default="1" label="Parking list" description="Do you want to use the parking list?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		
+		<field name="ms_area" type="radio" default="1" label="Area text" description="Do you want to use the area ?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		
+		<field name="AreaToSearch" type="radio" default="area" label="Area To Search" description="Area To Search ?">
+			<option value="area">Area</option>
+			<option value="covered_area">Covered Area</option>			
+		</field>		
+		
+		<!--
+		<field name="showCurrency" type="radio" default="0" label="show Currency" description="Do you want to show Currency ?">
+			<option value="0">No</option>
+			<option value="1">Select</option>
+			<option value="2">Radio</option>
+		</field>
+		-->
+		<field name="showTextPrice" type="radio" default="1" label="Price text" description="Do you want to use the price Text?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showExtra1" type="radio" default="0" label="extra1" description="Do you want to show extra1?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showExtra2" type="radio" default="0" label="extra2" description="Do you want to show extra1?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showExtra3" type="radio" default="0" label="extra3" description="Do you want to show extra1?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showExtra4" type="radio" default="0" label="extra4" description="Do you want to show extra1?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showExtra5" type="radio" default="0" label="extra5" description="Do you want to show extra1?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showExtra6" type="radio" default="0" label="extra6" description="Do you want to show extra1?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showExtra7" type="radio" default="0" label="extra7" description="Do you want to show extra1?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showExtra8" type="radio" default="0" label="extra8" description="Do you want to show extra1?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showExtra9" type="radio" default="0" label="extra9" description="Do you want to show extra1?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showExtra10" type="radio" default="0" label="extra10" description="Do you want to show extra1?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		
+		
+		<field name="ShowTextSearch" type="radio" default="0" label="Show Text Search" description="Do you want to Show Text Search?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		
+		
+		<field name="ShowTotalResult" type="radio" default="1" label="Show Total Result" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+								
+			</fieldset>
+
+			<fieldset name="advanced">
+
+				<field name="layout" type="list" label="MOD_PROP_SEARCH_FIELD_LAYOUT_LABEL" description="MOD_PROP_SEARCH_FIELD_LAYOUT_DESC">
+					<option value="horizontal">MOD_PROP_SEARCH_FIELD_LAYOUT_HORIZONTAL</option>
+					<option value="vertical">MOD_PROP_SEARCH_FIELD_LAYOUT_VERTICAL</option>
+				</field>
+				
+				
+
+				<field name="moduleclass_sfx" type="text" label="MOD_PROP_SEARCH_FIELD_MODULECLASS_SFX_LABEL" description="MOD_PROP_SEARCH_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field name="cache" type="list" default="0" label="MOD_PROP_SEARCH_FIELD_CACHING_LABEL" description="MOD_PROP_SEARCH_FIELD_CACHING_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field name="cachemode" type="hidden" default="itemid">
+					<option value="itemid"></option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

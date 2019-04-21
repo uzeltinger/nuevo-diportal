@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Properties List">
+		<message>
+			<![CDATA[Properties List]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic" label="COM_PROPERTIES_MENU_OPTIONS">
+			<field name="goToPropertyDetails" default="property" type="list" label="COM_PROPERTIES_MENU_REDIRECTURL_LABEL" description="COM_PROPERTIES_MENU_REDIRECTURL_DESC">
+				
+				<option value="category">Category</option>				
+				<option value="property">Property</option>	
+				<option value="properties">Properties</option>			
+			</field>
+		</fieldset>
+	</fields>		
+</metadata>

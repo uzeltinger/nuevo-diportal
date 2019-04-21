@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+	type="module"
+	version="3"
+	client="site"
+	method="upgrade">
+	<!-- Note: Site is the default if client is not specified -->
+	<name>Properties List</name>
+	<creationDate>31-03-2012</creationDate>
+	<author>Fabio Uzeltinger</author>
+	<authorEmail>fabiouz@gmail.com</authorEmail>
+	<authorUrl>http://www.com-property.com</authorUrl>
+	<copyright>Copyright (c) 2006 - 2015 YexeY All rights reserved.</copyright>
+	<license>License Info</license>
+	<version>1.1</version>
+	<description>MOD_PROP_LIST_DESCRIPTION</description>
+	<scriptfile>prop_list.scriptfile.php</scriptfile> <!-- New for 1.6 -->
+
+	<files>
+		<filename module="mod_prop_list">mod_prop_list.php</filename>
+		<filename module="mod_prop_list">helper.php</filename>
+		<filename module="mod_prop_list">index.html</filename>
+		<folder>css</folder>
+		<folder>tmpl</folder>
+	</files>
+
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_prop_list.ini</language>
+		<language tag="es-ES">es-ES.mod_prop_list.ini</language>
+		<language tag="it-IT">it-IT.mod_prop_list.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_properties/models/fields">
+						
+				<field name="cid" type="modulesCategory" extension="com_properties" label="MOD_PROP_LIST_FIELD_CATEGORY_LABEL" description="MOD_PROP_LIST_FIELD_CATEGORY_DESC" default="" required="false" />
+				
+				<field name="showTitle" type="radio" default="0" label="MOD_PROP_LIST_FIELD_TITLE_LABEL" description="MOD_PROP_LIST_FIELD_TITLE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="item_heading" type="list" default="h4" label="MOD_PROP_LIST_TITLE_HEADING" description="MOD_PROP_LIST_TITLE_HEADING_DESC">
+					<option value="h1">H1</option>
+					<option value="h2">H2</option>
+					<option value="h3">H3</option>
+					<option value="h4">H4</option>
+					<option value="h5">H5</option>
+				</field>				
+
+				<field name="readmore" type="radio" default="0" label="MOD_PROP_LIST_FIELD_READMORE_LABEL" description="MOD_PROP_LIST_FIELD_READMORE_DESC">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field name="goToMenu" type="menuitem" disable="separator" label="MOD_PROP_LIST_FIELD_REDIRECTURL_LABEL" description="MOD_PROP_LIST_FIELD_REDIRECTURL_DESC" >
+					<option	value="">JDEFAULT</option>
+				</field>
+				
+				<field name="goToPropertyDetails" default="category" type="list" label="COM_PROPERTIES_MENU_REDIRECTURL_LABEL" description="COM_PROPERTIES_MENU_REDIRECTURL_DESC">
+					<option value="category">Category</option>
+					<option value="categoryprodduct">Category - prodduct</option>	
+					<option value="properties">Properties</option>
+					<option value="property">Property</option>				
+				</field>
+				
+				<field name="count" type="text" default="5"	 label="MOD_PROP_LIST_FIELD_COUNT_LABEL" description="MOD_PROP_LIST_FIELD_COUNT_DESC" />
+				
+				<field name="featured" type="radio" default="0" label="MOD_PROP_LIST_FIELD_FEATURED_LABEL" description="MOD_PROP_LIST_FIELD_FEATURED_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="ordering" type="list" default="p.refresh_list" label="MOD_PROP_LIST_FIELD_ORDERING_LABEL" description="MOD_PROP_LIST_FIELD_ORDERING_DESC">
+					<option value="p.refresh_time">MOD_PROP_LIST_FIELD_ORDERING_DATE</option>
+					<option value="p.listdate">MOD_PROP_LIST_FIELD_ORDERING_CREATED</option>
+					<option value="p.ordering">MOD_PROP_LIST_FIELD_ORDERING_ORDERING</option>						
+					<option value="rand()">MOD_PROP_LIST_FIELD_ORDERING_RANDOM</option>
+				</field>
+				
+				<field name="orderdir" type="list" default="ASC" label="MOD_PROP_LIST_FIELD_ORDERDIR_LABEL" description="MOD_PROP_LIST_FIELD_ORDERDIR_DESC">
+					<option value="ASC">ASC</option>
+					<option value="DESC">DESC</option>					
+				</field>
+				<field name="widthThumb" type="text" default="120"	 label="MOD_PROP_LIST_FIELD_WIDTHTHUMB_LABEL" description="MOD_PROP_LIST_FIELD_WIDTHTHUMB_DESC" />
+				<field name="heightThumb" type="text" default="90"	 label="MOD_PROP_LIST_FIELD_HEIGHTHUMB_LABEL" description="MOD_PROP_LIST_FIELD_HEIGHTHUMB_DESC" />
+								
+			</fieldset>
+
+			<fieldset name="advanced">
+
+				<field name="layout" type="list" label="MOD_PROP_LIST_FIELD_LAYOUT_LABEL" description="MOD_PROP_LIST_FIELD_LAYOUT_DESC">
+					<option value="monte_featured">monte_featured</option>
+					<option value="horizontal">MOD_PROP_LIST_FIELD_LAYOUT_HORIZONTAL</option>
+					<option value="vertical">MOD_PROP_LIST_FIELD_LAYOUT_VERTICAL</option>
+					<option value="expanded">MOD_PROP_LIST_FIELD_LAYOUT_EXPANDED</option>
+					<option value="albaniandream_featured">albaniandream_featured</option>
+					<option value="albaniandream_most_popular">albaniandream_most_popular</option>
+				</field>
+				
+				
+
+				<field name="moduleclass_sfx" type="text" label="MOD_PROP_LIST_FIELD_MODULECLASS_SFX_LABEL" description="MOD_PROP_LIST_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field name="cache" type="list" default="0" label="MOD_PROP_LIST_FIELD_CACHING_LABEL" description="MOD_PROP_LIST_FIELD_CACHING_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field name="cachemode" type="hidden" default="itemid">
+					<option value="itemid"></option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

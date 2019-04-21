@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="General" label="General">
+		
+		<field name="loadBootstrapCss" type="radio" default="1" label="load Bootstrap Css" description="load Bootstrap Css">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field name="UseCountry" type="radio" default="1" label="Use Country" description="Use Country">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>		
+		<field name="UseCountryDefault" default="1" label="Use Country Default" description="">
+		</field>		
+		<field name="UseState" type="radio" default="1" label="Use State" description="UseState">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>		
+		<field name="UseStateDefault" type="text" default="1" label="Use State Default" description="">
+		</field>		
+		<field name="UseLocality" type="radio" default="1" label="Use Locality" description="UseLocality">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>		
+		<field name="UseLocalityDefault" type="text" default="1" label="Use Locality Default" description="UseLocalityDefault">
+		</field>		
+		<field name="PropertiesShow" type="text" default="5" label="Properties to Show" description="Properties to Show">
+		</field>
+		<field name="useTranslations" type="radio" default="0" label="use Translations" description="use Translations">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>		
+		<field name="AutoCoord" type="radio" default="1" label="AutoC oord" description="Auto Coord">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>					
+		<field
+			name="SaveContactForm" type="radio" default="1" label="Save Contact Form" description="Save Contact Form">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>		
+		<field name="SendContactForm" type="list" default="3" label="Send Contact Form" description="Send Contact Form">
+			<option value="1">Admin</option>			
+			<option value="2">Agent</option>
+			<option value="3">Admin Agent</option>			
+		</field>
+		<field name="spacer1" type="spacer" hr="true" />			
+		<field name="ActiveMap" type="radio" default="1" label="Active Map" description="Active Map">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field name="MapDistance" type="text" default="14" label="Map Distance" description="Map Distance">
+		</field>		
+		<field name="DefaultLat" type="text" default="-34.650261" label="Default Lat" description="Default Lat">
+		</field>		
+		<field name="DefaultLng" type="text" default="-58.388302" label="Default Lng" description="Default Lng">
+		</field>
+		<field name="WidthImage" type="text" default="640" label="Width Image" description="WidthImage">
+		</field>			
+		<field name="HeightImage" type="text" default="480" label="Height Image" description="HeightImage">
+		</field>
+				
+		<field name="ShowOrderByDefault" type="list" default="refresh_time" label="Show Order By Default" description="ShowOrderByDefault">
+			<option value="ordering">Order by</option>			
+			<option value="p.refresh_time">Date</option>
+			<option value="p.price">Price</option>	
+			<option value="p.name">Title</option>	
+			<option value="p.featured">Featured</option>	
+			<option value="rand()">RANDOM</option>	
+		</field>		
+		<field name="ShowOrderDefault" type="list" default="DESC" label="Show Order Default" description="ShowOrderDefault">
+			<option value="ASC">ASC</option>
+			<option value="DESC">DESC</option>
+		</field>		
+		<field name="SimbolPrice" type="text" default="$" label="Simbol Price" description="SimbolPrice">
+		</field>		
+		<field name="PositionPrice" type="list" default="0" label="Position Price" description="PositionPrice">
+			<option value="0">Before</option>
+			<option value="1">After</option>
+		</field>		
+		<field name="FormatPrice" type="list" default="0" label="Format Price" description="FormatPrice">
+			<option value="0">000,000</option>
+			<option value="1">000,000.00</option>
+			<option value="2">000.000</option>
+			<option value="3">000.000,00</option>
+		</field>				
+	</fieldset>
+
+
+
+
+
+
+
+
+
+	<fieldset name="list" label="list" description="" >
+		<field name="Listlayout" type="list" default="default" label="Layout Template Properties List" description="Template Properties List">
+			<option value="default">Default</option>
+			<!--<option value="full">Full data</option>	-->		
+		</field>
+		
+		<field name="ShowReferenceInList" type="radio" default="1" label="Show Reference In List" description="Show Reference In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowCountryInList" type="radio" default="1" label="Show Country In List" description="Show Country In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowStateInList" type="radio" default="1" label="Show State In List" description="Show State In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowLocalityInList" type="radio" default="1" label="Show Locality In List" description="Show Locality In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowCategoryInList" type="radio" default="1" label="Show Category In List" description="Show Category In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowTypeInList" type="radio" default="1" label="Show Type In List" description="Show Type In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowAddressInList" type="radio" default="1" label="Show Address In List" description="Show Address In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowPriceInList" type="radio" default="1" label="Show Price In List" description="Show Price In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="ShowYearsInList" type="radio" default="1" label="Show Years In List" description="Show Years In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowBedroomsInList" type="radio" default="1" label="Show Bedrooms In List" description="Show Bedrooms In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowBathroomsInList" type="radio" default="1" label="Show Bathrooms In List" description="Show Bathrooms In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowGarageInList" type="radio" default="1" label="Show Garage In List" description="Show Garage In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowTotalAreaInList" type="radio" default="1" label="Show Total Area In List" description="Show Total Area In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowCoveredAreaInList" type="radio" default="1" label="Show Covered Area In List" description="Show Covered Area In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>				
+	
+		<field name="ShowDetailsMarketInList" type="radio" default="1" label="Show Details Market In List" description="Show Details Market In List?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowContactLink" type="radio" default="1" label="Show Contact Link" description="Show Contact Link?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowMapLink" type="radio" default="1" label="Show Map Link" description="Show Map Link?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="ShowPriceList" type="radio" default="1" label="Show Price List Link" description="Show Price List Link?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+	</fieldset>		
+		
+		
+	<fieldset name="details" label="details" description="">			
+		
+		<field name="DetailLayout" type="list" default="default" label="Layout Template Properties Detail" description="Template Properties Detail">
+			<option value="default">Default</option>
+			<option value="blue">blue</option>
+			<option value="fulldata">Full data</option>			
+		</field>			
+		<field name="ShowImagesSystemDetail" type="list" default="1" label="Show Images System" description="Show Images System">
+			<option value="0">No</option>
+			<option value="1">prettyPhoto</option>			
+			<option value="2">Slideshow</option>
+		</field>		
+		<field name="pretty_photo_style" type="list" default="light_rounded" label="prettyPhoto Style" description="prettyPhoto Style">					
+			<option value="0">Ninguna</option>
+			<option value="dark_rounded">Dark Rounded</option>
+			<option value="dark_square">Dark Square</option>
+			<option value="light_rounded">Light Rounded</option>
+			<option value="light_square">Light Square</option>
+			<option value="facebook">Facebook</option>
+		</field>		
+		
+		<field name="spacer1" type="spacer" hr="true" />		
+		<field name="ShowMapInDetail" type="radio" default="1" label="Show Map In Details" description="Show Map In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowReferenceInDetail" type="radio" default="1" label="Show Reference In Details" description="Show Reference In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowCountryInDetail" type="radio" default="1" label="Show Country In Details" description="Show Country In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowStateInDetail" type="radio" default="1" label="Show State In Details" description="Show State In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowLocalityInDetail" type="radio" default="1" label="Show Locality In Details" description="Show Locality In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowCategoryInDetail" type="radio" default="1" label="Show Category In Details" description="Show Category In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowTypeInDetail" type="radio" default="1" label="Show Type In Details" description="Show Type In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowAddressInDetail" type="radio" default="1" label="Show Address In Details" description="Show Address In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowPriceInDetail" type="radio" default="1" label="Show Price In Details" description="Show Price In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="ShowYearsInDetail" type="radio" default="1" label="Show Years In Details" description="Show Years In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowBedroomsInDetail" type="radio" default="1" label="Show Bedrooms In Details" description="Show Bedrooms In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowBathroomsInDetail" type="radio" default="1" label="Show Bathrooms In Details" description="Show Bathrooms In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowGarageInDetail" type="radio" default="1" label="Show Garage In Details" description="Show Garage In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowTotalAreaInDetail" type="radio" default="1" label="Show Total Area In Details" description="Show Total Area In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="ShowCoveredAreaInDetail" type="radio" default="1" label="Show Covered Area In Details" description="Show Covered Area In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>	
+		<field name="ShowDetailsMarketInDetail" type="radio" default="1" label="Show Details Market In Details" description="Show Details Market In Details?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>		
+		<field name="spacer2" type="spacer" hr="true" />			
+	</fieldset>
+	
+	<fieldset name="agents" label="Agents" description="" >
+		<field name="AgentsShow" type="text" default="10" label="Agents Show" description="Agents Show" />
+		<field name="canAddProperties" type="text" default="5" label="Agents can Add Properties" description="Agents can Add Properties" />
+		<field name="canAddImages" type="text" default="5" label="Agents can Add Images" description="Agents can Add Images" />		
+	</fieldset>	
+	
+	
+	
+	<fieldset name="urls" label="Urls" description="" >	
+	<!---->
+	<field name="useDataInUrl" type="radio" default="0" label="Use Data In Url" description="Use Data In Url">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	
+		<field name="urlCountry" type="radio" default="0" label="Use Country" description="Use Country">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="urlState" type="radio" default="0" label="Use State" description="UseState">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>		
+		
+		<field name="urlLocality" type="radio" default="0" label="Use Locality" description="UseLocality">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="urlCategory" type="radio" default="0" label="Use Category" description="Use Category">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="urlType" type="radio" default="0" label="Use Type" description="Use Type">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="urlRefId" type="list" default="0" label="Product Ref or Id in URL" description="Use Product Ref or Id in URL">
+			<option value="0">Default</option>
+			<option value="1">ID</option>
+			<option value="2">REF</option>
+			<option value="3">ID-Alias</option>
+			<option value="4">REF-Alias</option>
+			<option value="5">Alias</option>
+		</field>	
+		</fieldset>		
+	
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC" >
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" filter="rules" component="com_properties" section="component" />
+	</fieldset>
+	
+</config>

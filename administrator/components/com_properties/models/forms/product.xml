@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id" type="text" label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC" size="10" default="0" readonly="true" class="readonly" />
+		
+		<field name="ref" type="text" label="COM_PROPERTIES_FIELD_REFERENCE_LABEL" description="COM_PROPERTIES_FIELD_REFERENCE_DESC" class="inputbox" size="30"/>
+	
+		<field name="name" type="text" label="COM_PROPERTIES_FIELD_NAME_LABEL" description="COM_PROPERTIES_FIELD_NAME_DESC" class="inputbox" size="30" required="true" />
+
+		<field name="alias" type="text" label="JFIELD_ALIAS_LABEL" description="JFIELD_ALIAS_DESC" class="inputbox" size="30" />	
+		
+		
+			<field name="refresh_time" type="text" label="COM_PROPERTIES_FIELD_REFRESHTIME_LABEL" description="COM_PROPERTIES_FIELD_REFRESHTIME_DESC" class="inputbox" size="30" />
+		
+		<field name="cid" type="productcategory" extension="com_properties" label="COM_PROPERTIES_FIELD_SELECTCATEGORY_LABEL" description="COM_PROPERTIES_FIELD_SELECTCATEGORY_DESC" class="inputbox" required="true" />
+		
+		<field name="type" type="producttype" extension="com_properties" label="COM_PROPERTIES_FIELD_SELECTTYPE_LABEL" description="COM_PROPERTIES_FIELD_SELECTTYPE_DESC" class="inputbox" required="true" />
+		
+		<field name="cyid" type="productcountry" extension="com_properties" label="COM_PROPERTIES_FIELD_SELECTCOUNTRY_LABEL" description="COM_PROPERTIES_FIELD_SELECTCOUNTRY_DESC" class="inputbox" />
+		
+		<field name="sid" type="productstate" extension="com_properties" label="COM_PROPERTIES_FIELD_SELECTSTATE_LABEL" description="COM_PROPERTIES_FIELD_SELECTSTATE_DESC" class="inputbox" />
+		
+		<field name="lid" type="productlocality" extension="com_properties" label="COM_PROPERTIES_FIELD_SELECTLOCALITY_LABEL" description="COM_PROPERTIES_FIELD_SELECTLOCALITY_DESC" class="inputbox" />
+		
+		<field name="published" type="radio" label="JPUBLISHED" description="JFIELD_PUBLISHED_DESC" class="btn-group" filter="intval" size="1" default="1" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>	
+		
+		<field name="featured" type="radio" label="Destacado" description="Destacado" class="btn-group" filter="intval" size="1" default="1" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		
+		
+		
+								
+								
+		
+		<field name="available" type="list" label="Disponibilidad" description="Disponibilidad" class="inputbox" filter="intval" size="1" default="1" >
+			<option value="1">COM_PROPERTIES_AVAILABLE_1</option>
+			<option value="0">COM_PROPERTIES_AVAILABLE_0</option>
+			<option value="2">COM_PROPERTIES_AVAILABLE_2</option>
+			<option value="3">COM_PROPERTIES_AVAILABLE_3</option>
+			<option value="4">COM_PROPERTIES_AVAILABLE_4</option>
+			<option value="5">COM_PROPERTIES_AVAILABLE_5</option>			
+		</field>
+		
+		<field name="description" type="editor" class="inputbox" label="COM_PROPERTIES_FIELD_PRODUCT_SHORT_DESCRIPTION_LABEL" description="" filter="safehtml" buttons="true" />
+		
+		<field name="text" type="editor" class="inputbox" label="COM_PROPERTIES_FIELD_PRODUCT_DESCRIPTION_LABEL" description="" filter="safehtml" buttons="true" />		
+
+		<field name="checked_out" type="hidden" filter="unset" />
+
+		<field name="checked_out_time" type="hidden" filter="unset" />
+		
+		<field name="language" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL"	description="COM_CONTENT_FIELD_LANGUAGE_DESC" class="inputbox">
+			<option value="*">JALL</option>
+		</field>
+
+		<field name="ordering" type="ordering" class="inputbox" label="JFIELD_ORDERING_LABEL" description="JFIELD_ORDERING_DESC" />
+		
+		<field name="address" type="text" label="COM_PROPERTIES_FIELD_ADDRESS_LABEL" description="COM_PROPERTIES_FIELD_ADDRESS_DESC" class="inputbox" size="30" />
+		
+		<field name="postcode" type="text" label="COM_PROPERTIES_FIELD_POSTCODE_LABEL" description="COM_PROPERTIES_FIELD_POSTCODE_DESC" class="inputbox" size="30" />
+		
+		<field name="agent_id" type="modalproductprofile" label="COM_PROPERTIES_FIELD_AGENT_LABEL" description="" size="30" default="62" />		
+		
+		
+		<field name="capacity" type="text" label="COM_PROPERTIES_FIELD_CAPACITY_LABEL" description="COM_PROPERTIES_FIELD_CAPACITY_DESC" class="inputbox" size="30" default="" />
+		
+		<field name="rooms" type="text" label="COM_PROPERTIES_FIELD_ROOMS_LABEL" description="COM_PROPERTIES_FIELD_ROOMS_DESC" class="inputbox" size="30" default="" />
+		
+		
+		<field name="years" type="text" label="COM_PROPERTIES_FIELD_YEARS_LABEL" description="COM_PROPERTIES_FIELD_YEARS_DESC" class="inputbox" size="30" default="" />
+		
+		<field name="bedrooms" type="text" label="COM_PROPERTIES_FIELD_BEDROOMS_LABEL" description="COM_PROPERTIES_FIELD_BEDROOMS_DESC" class="inputbox" size="30" default="" />
+		
+		<field name="bathrooms" type="text" label="COM_PROPERTIES_FIELD_BATHROOMS_LABEL" description="COM_PROPERTIES_FIELD_BATHROOMS_DESC" class="inputbox" size="30" default="" />
+		
+		<field name="garage" type="text" label="COM_PROPERTIES_FIELD_GARAGE_LABEL" description="COM_PROPERTIES_FIELD_GARAGE_DESC" class="inputbox" size="30" default="" />
+		
+		<field name="area" type="text" label="COM_PROPERTIES_FIELD_AREA_LABEL" description="COM_PROPERTIES_FIELD_AREA_DESC" class="inputbox" size="30" default="" />
+		
+		<field name="covered_area" type="text" label="COM_PROPERTIES_FIELD_COVEREDAREA_LABEL" description="COM_PROPERTIES_FIELD_COVEREDAREA_DESC" class="inputbox" size="30" default="" />		
+		
+		<field name="price" type="text" label="COM_PROPERTIES_FIELD_PRICE_LABEL" description="COM_PROPERTIES_FIELD_PRICE_DESC" class="inputbox" size="30" />		
+				
+		<field name="lat" type="text" label="COM_PROPERTIES_FIELD_LAT_LABEL" description="COM_PROPERTIES_FIELD_LAT_DESC" class="inputbox" size="30" default="0" />
+		<field name="lng" type="text" label="COM_PROPERTIES_FIELD_LNG_LABEL" description="COM_PROPERTIES_FIELD_LNG_DESC" class="inputbox" size="30" default="0" />
+		
+		
+		<field name="metadesc" type="textarea" label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC" rows="3" cols="40"/>
+
+	<field name="metakey" type="textarea" label="JFIELD_META_KEYWORDS_LABEL" description="JFIELD_META_KEYWORDS_DESC" rows="3" cols="40"/>
+	
+	<field name="layout" type="list" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_COMPONENT_LAYOUT_DESC" view="category" useglobal="true" >
+				<option value="0">Default</option>
+				<option value="category">Default category</option>			
+			</field>			
+			
+	</fieldset>	
+	
+	<fieldset name="extras1" label="COM_PROPERTIES_FIELD_EXTRAS_LABEL">
+	
+		
+		
+		<field name="extra1" type="radio"
+			class="btn-group"
+			label="PROPERTIES_DETAIL_EXTRA_1"
+			description="PROPERTIES_DETAIL_EXTRA_1"
+			default="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		
+		
+		<field name="extra2" type="radio" label="PROPERTIES_DETAIL_EXTRA_2" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra3" type="radio" label="PROPERTIES_DETAIL_EXTRA_3" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra4" type="radio" label="PROPERTIES_DETAIL_EXTRA_4" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra5" type="radio" label="PROPERTIES_DETAIL_EXTRA_5" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra6" type="radio" label="PROPERTIES_DETAIL_EXTRA_6" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra7" type="radio" label="PROPERTIES_DETAIL_EXTRA_7" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra8" type="radio" label="PROPERTIES_DETAIL_EXTRA_8" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra9" type="radio" label="PROPERTIES_DETAIL_EXTRA_9" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra10" type="radio" label="PROPERTIES_DETAIL_EXTRA_10" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		<field name="extra11" type="radio" label="PROPERTIES_DETAIL_EXTRA_11" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>	
+		<field name="extra12" type="radio" label="PROPERTIES_DETAIL_EXTRA_12" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra13" type="radio" label="PROPERTIES_DETAIL_EXTRA_13" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra14" type="radio" label="PROPERTIES_DETAIL_EXTRA_14" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra15" type="radio" label="PROPERTIES_DETAIL_EXTRA_15" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra16" type="radio" label="PROPERTIES_DETAIL_EXTRA_16" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra17" type="radio" label="PROPERTIES_DETAIL_EXTRA_17" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra18" type="radio" label="PROPERTIES_DETAIL_EXTRA_18" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra19" type="radio" label="PROPERTIES_DETAIL_EXTRA_19" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra20" type="radio" label="PROPERTIES_DETAIL_EXTRA_20" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		<field name="extra21" type="radio" label="PROPERTIES_DETAIL_EXTRA_21" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra22" type="radio" label="PROPERTIES_DETAIL_EXTRA_22" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra23" type="radio" label="PROPERTIES_DETAIL_EXTRA_23" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra24" type="radio" label="PROPERTIES_DETAIL_EXTRA_24" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra25" type="radio" label="PROPERTIES_DETAIL_EXTRA_25" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra26" type="radio" label="PROPERTIES_DETAIL_EXTRA_26" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra27" type="radio" label="PROPERTIES_DETAIL_EXTRA_27" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra28" type="radio" label="PROPERTIES_DETAIL_EXTRA_28" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra29" type="radio" label="PROPERTIES_DETAIL_EXTRA_29" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra30" type="radio" label="PROPERTIES_DETAIL_EXTRA_30" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		<field name="extra31" type="radio" label="PROPERTIES_DETAIL_EXTRA_31" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra32" type="radio" label="PROPERTIES_DETAIL_EXTRA_32" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra33" type="radio" label="PROPERTIES_DETAIL_EXTRA_33" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra34" type="radio" label="PROPERTIES_DETAIL_EXTRA_34" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra35" type="radio" label="PROPERTIES_DETAIL_EXTRA_35" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra36" type="radio" label="PROPERTIES_DETAIL_EXTRA_36" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra37" type="radio" label="PROPERTIES_DETAIL_EXTRA_37" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra38" type="radio" label="PROPERTIES_DETAIL_EXTRA_38" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra39" type="radio" label="PROPERTIES_DETAIL_EXTRA_39" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>
+		
+		<field name="extra40" type="radio" label="PROPERTIES_DETAIL_EXTRA_40" description="" class="btn-group" default="0" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>			
+		
+	</fieldset>
+		
+	<fieldset name="extras40" label="COM_PROPERTIES_FIELD_EXTRAS_LABEL">	
+		<field name="extratext1" type="text" label="PROPERTIES_DETAIL_EXTRATEXT_1" description="" class="inputbox large" size="25" default="" />	
+		<field name="extratext2" type="text" label="PROPERTIES_DETAIL_EXTRATEXT_2" description="" class="inputbox large" size="25" default="" />		
+		<field name="extratext3" type="text" label="PROPERTIES_DETAIL_EXTRATEXT_3" description="" class="inputbox large" size="25" default="" />
+			<field name="extratext4" type="text" label="PROPERTIES_DETAIL_EXTRATEXT_4" description="" class="inputbox large" size="25" default="" />
+			<field name="extratext5" type="text" label="PROPERTIES_DETAIL_EXTRATEXT_5" description="" class="inputbox large" size="25" default="" />
+			<field name="extratext6" type="text" label="PROPERTIES_DETAIL_EXTRATEXT_6" description="" class="inputbox large" size="25" default="" />
+			<field name="extratext7" type="text" label="PROPERTIES_DETAIL_EXTRATEXT_7" description="" class="inputbox large" size="25" default="" />
+			<field name="extratext8" type="text" label="PROPERTIES_DETAIL_EXTRATEXT_8" description="" class="inputbox large" size="25" default="" />
+			<field name="extratext9" type="text" label="PROPERTIES_DETAIL_EXTRATEXT_9" description="" class="inputbox large" size="25" default="" />
+			<field name="extratext10" type="text" label="PROPERTIES_DETAIL_EXTRATEXT_10" description="" class="inputbox large" size="25" default="" />
+			<!--
+			<field name="extra51" type="text" label="PROPERTIES_DETAIL_EXTRA_51" description="" class="inputbox large" size="25" default="" />
+			<field name="extra52" type="text" label="PROPERTIES_DETAIL_EXTRA_52" description="" class="inputbox large" size="25" default="" />
+			<field name="extra53" type="text" label="PROPERTIES_DETAIL_EXTRA_53" description="" class="inputbox large" size="25" default="" />
+			<field name="extra54" type="text" label="PROPERTIES_DETAIL_EXTRA_54" description="" class="inputbox large" size="25" default="" />
+			<field name="extra55" type="text" label="PROPERTIES_DETAIL_EXTRA_55" description="" class="inputbox large" size="25" default="" />
+			<field name="extra56" type="text" label="PROPERTIES_DETAIL_EXTRA_56" description="" class="inputbox large" size="25" default="" />
+			<field name="extra57" type="text" label="PROPERTIES_DETAIL_EXTRA_57" description="" class="inputbox large" size="25" default="" />
+			<field name="extra58" type="text" label="PROPERTIES_DETAIL_EXTRA_58" description="" class="inputbox large" size="25" default="" />
+			<field name="extra59" type="text" label="PROPERTIES_DETAIL_EXTRA_59" description="" class="inputbox large" size="25" default="" />
+			<field name="extra60" type="text" label="PROPERTIES_DETAIL_EXTRA_60" description="" class="inputbox large" size="25" default="" />
+			<field name="extra61" type="text" label="PROPERTIES_DETAIL_EXTRA_61" description="" class="inputbox large" size="25" default="" />
+			<field name="extra62" type="text" label="PROPERTIES_DETAIL_EXTRA_62" description="" class="inputbox large" size="25" default="" />
+			<field name="extra63" type="text" label="PROPERTIES_DETAIL_EXTRA_63" description="" class="inputbox large" size="25" default="" />
+			<field name="extra64" type="text" label="PROPERTIES_DETAIL_EXTRA_64" description="" class="inputbox large" size="25" default="" />
+			<field name="extra65" type="text" label="PROPERTIES_DETAIL_EXTRA_65" description="" class="inputbox large" size="25" default="" />
+			<field name="extra66" type="text" label="PROPERTIES_DETAIL_EXTRA_66" description="" class="inputbox large" size="25" default="" />
+			<field name="extra67" type="text" label="PROPERTIES_DETAIL_EXTRA_67" description="" class="inputbox large" size="25" default="" />
+			<field name="extra68" type="text" label="PROPERTIES_DETAIL_EXTRA_68" description="" class="inputbox large" size="25" default="" />
+			<field name="extra69" type="text" label="PROPERTIES_DETAIL_EXTRA_69" description="" class="inputbox large" size="25" default="" />
+			<field name="extra70" type="text" label="PROPERTIES_DETAIL_EXTRA_70" description="" class="inputbox large" size="25" default="" />
+			<field name="extra71" type="text" label="PROPERTIES_DETAIL_EXTRA_71" description="" class="inputbox large" size="25" default="" />
+			<field name="extra72" type="text" label="PROPERTIES_DETAIL_EXTRA_72" description="" class="inputbox large" size="25" default="" />
+			<field name="extra73" type="text" label="PROPERTIES_DETAIL_EXTRA_73" description="" class="inputbox large" size="25" default="" />
+			<field name="extra74" type="text" label="PROPERTIES_DETAIL_EXTRA_74" description="" class="inputbox large" size="25" default="" />
+			<field name="extra75" type="text" label="PROPERTIES_DETAIL_EXTRA_75" description="" class="inputbox large" size="25" default="" />
+			<field name="extra76" type="text" label="PROPERTIES_DETAIL_EXTRA_76" description="" class="inputbox large" size="25" default="" />
+			<field name="extra77" type="text" label="PROPERTIES_DETAIL_EXTRA_77" description="" class="inputbox large" size="25" default="" />
+			<field name="extra78" type="text" label="PROPERTIES_DETAIL_EXTRA_78" description="" class="inputbox large" size="25" default="" />
+			<field name="extra79" type="text" label="PROPERTIES_DETAIL_EXTRA_79" description="" class="inputbox large" size="25" default="" />
+			<field name="extra80" type="text" label="PROPERTIES_DETAIL_EXTRA_80" description="" class="inputbox large" size="25" default="" />
+			-->
+		
+		
+	</fieldset>
+	
+		
+		
+</form>

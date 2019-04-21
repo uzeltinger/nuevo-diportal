@@ -1,0 +1,33 @@
+div.modproplist-vertical {
+text-align:center;
+
+}
+
+div.modproplist-product{
+
+}
+
+div.modproplist-image img{
+border: 1px solid #CCCCCC;
+padding:3px;
+}
+
+div.modproplist-title{
+text-align:center;
+}
+
+div.modproplist-detail{
+text-align:center;
+}
+
+div.modproplist-viewdetail{
+text-align:center;
+}
+
+div.modproplist-separator{
+text-align:center;
+margin:10px auto;
+width:90%;
+height:10px;
+border-bottom: 1px solid #CCCCCC;
+}
