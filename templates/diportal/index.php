@@ -28,6 +28,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/style.css');
 $doc->addScript($this->baseurl.'/media/jui/js/jquery.min.js');
 $doc->addScript($this->baseurl.'/media/jui/js/jquery-noconflict.js');
 $doc->addScript($this->baseurl.'/media/jui/js/jquery-migrate.min.js');
+$doc->addScript('templates/'.$this->template.'/js/popper.min.js');
 $doc->addScript('templates/'.$this->template.'/js/bootstrap.min.js');
 $doc->addScript('templates/'.$this->template.'/js/main.js');
 if(isset($doc->_scripts[$this->baseurl.'/media/com_properties/prettyPhoto_compressed_316/js/jquery.prettyPhoto.js']))
