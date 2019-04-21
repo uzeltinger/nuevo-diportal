@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.0" type="template" client="site" method="upgrade">
+		<name>diportal</name>
+		<creationDate>26 Mar 2018</creationDate>
+		<author>Uzeltinger</author>
+		<authorEmail>fabiouz@gmail.com</authorEmail>
+		<authorUrl>http://diportalpropiedades.com</authorUrl>
+		<copyright>Copyright (C) 2019 diportal. All rights reserved.</copyright>
+		<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+		<version>1.0</version>
+		<description>
+				<![CDATA[						
+						<h4>Full Responsive Joomla Template </h4>						
+						<p>We present to you a dazzling first from us – a FREE responsive template from Joomla!</p>										
+						]]>
+		</description>
+		<files>
+				<filename>analyticstracking.php</filename>
+				<filename>component.php</filename>
+				<filename>error.php</filename>
+				<filename>index.php</filename>
+				<filename>offline.php</filename>
+				<filename>templateDetails.xml</filename>				
+				<folder>css</folder>
+				<folder>html</folder>
+				<folder>images</folder>
+				<folder>js</folder>
+				<folder>fonts</folder>
+				<folder>framework</folder>
+				<folder>libs</folder>		
+		</files>
+		<positions>
+				<!-- Template specific Module Positions -->
+				<position>navmenu</position>	
+				<position>topsearch</position>	
+				<position>topfeatured</position>	
+				<position>right</position>
+				<position>footer</position>			
+				<position>bottom</position>				
+				<!-- STANDARD Module Positions 
+				<position>breadcrumb</position>				
+				<position>toolbar</position>
+				<position>top_toolbar</position>
+				<position>login</position>
+				<position>footer_nav</position>
+				<position>lang</position>				
+				<position>mainbody</position>
+				<position>mainbody_top</position>
+				<position>mainbody_bottom</position>
+				<position>top</position>				
+				<position>bottom</position>	
+				-->			
+		</positions>
+		<languages folder="language">
+				<language tag="en-GB">en-GB.tpl_diportal.ini</language>
+		</languages>
+		<config>
+				<fields name="params">
+						<!-- Basic settings -->
+						<fieldset name="BASIC_SETTINGS" addfieldpath="/templates/diportal/admin/elements">
+								<field name="template_color" type="list" default="1" label="TPL_LANG_TEMPLATE_COLOR" description="TPL_LANG_TEMPLATE_COLOR_DESC">
+										<option value="1">TPL_LANG_COLOR_1</option>
+										<option value="2">TPL_LANG_COLOR_2</option>
+										<option value="3">TPL_LANG_COLOR_3</option>
+								</field>								
+						</fieldset>					
+						
+				</fields>
+		</config>
+</extension>
