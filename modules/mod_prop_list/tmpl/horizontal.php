@@ -72,7 +72,7 @@ $item = $list[$i];
                 </div>
 				<div class="col-4">
                     <div class="list-button-more-right float-right consultar-whatsapp">
-                        <a class="btn btn-success boton-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=542914051284&amp;text=Hola,%20me%20das%20más%20información%20por%20favor.%0AMuchas%20gracias.%0A<?php echo 'http://www.filipponepropiedades.com'.$item->link;?>"><i class="fab fa-whatsapp"></i> Consultar </a>
+                        <a class="btn btn-success boton-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=541130190242&amp;text=Hola,%20me%20das%20más%20información%20por%20favor.%0AMuchas%20gracias.%0A<?php echo JUri::_base().$item->link;?>"><i class="fab fa-whatsapp"></i> Consultar </a>
                     </div>
 				</div>
 			</div>

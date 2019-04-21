@@ -130,7 +130,7 @@ if($mostrarme)
      					<div class="details_extras_text_inner">
 
 						 <div class="list-button-more-right float-right consultar-whatsapp">
-                    <a class="btn btn-success boton-whatsapp" target="_blank" data-action="share/whatsapp/share" href="https://api.whatsapp.com/send?phone=542914051284&amp;text=Hola,%20me%20das%20más%20información%20por%20favor.%0AMuchas%20gracias.%0A<?php echo 'http://www.filipponepropiedades.com'.$this->item->link;?>"><i class="fab fa-whatsapp"></i> Consultar </a>
+                    <a class="btn btn-success boton-whatsapp" target="_blank" data-action="share/whatsapp/share" href="https://api.whatsapp.com/send?phone=541130190242&amp;text=Hola,%20me%20das%20más%20información%20por%20favor.%0AMuchas%20gracias.%0A<?php echo substr(JUri::base(), 0, -1).$this->item->link;?>"><i class="fab fa-whatsapp"></i> Consultar </a>
                 </div>
 				
  	<?php
