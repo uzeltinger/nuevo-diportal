@@ -221,7 +221,7 @@ if($mostrarme)
 		foreach($this->itemimages as $image){
 		?>
 		<div class="mobile-photo">
-		<img class="thumb" name="leaf" src="<?php echo $rout_image.$image->name; ?>" alt="<?php echo str_replace('"',' ',$Product->name); ?>" style="width:100%;height: auto">		
+		<img class="thumb" name="leaf" src="<?php echo $rout_image.$image->image; ?>" alt="<?php echo str_replace('"',' ',$Product->name); ?>" style="width:100%;height: auto">		
 		</div>
 		<?php } ?>
 </div>
