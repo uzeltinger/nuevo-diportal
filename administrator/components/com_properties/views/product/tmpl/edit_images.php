@@ -114,7 +114,7 @@ if($UploadImagesSystem==1){ ?>
     </script>
   
      <style type="text/css" media="screen">
-    <!--
+    
         
              
         .bubbleInfo {
@@ -208,7 +208,7 @@ if($UploadImagesSystem==1){ ?>
         	color: #333;
         }
         
-    -->
+   
     </style>
      
 
@@ -217,7 +217,7 @@ if($UploadImagesSystem==1){ ?>
       
 <?php
 
-$img_path = JURI::root().'images/properties/images/'.$this->item->id.'/';
+$img_path = JURI::root()."images/properties/images/".$this->item->id.'/';
 $peque_path = JURI::root().'images/properties/images/thumbs/'.$this->item->id.'/';
 
 //print_r($this->Images);
@@ -236,10 +236,10 @@ if($this->Profile->canaddimages<$totalImages)
 	}
 
 foreach ($this->Images as $Image) {				
-//					echo '<a id="' . $Image->name . '" class="no_modal je_thumbnail" href="'.JURI::root().'images/com_properties/gallery/' . $this->Gallery->id . '/' . $Image->name . '" target="_blank"> ';
-echo '<div class="thumb bubbleInfo" id="' . $Image->name . '">';
+//					
+echo '<div class="thumb bubbleInfo" id="' . $Image->image . '">';
 echo '<div>';
-					echo '<img width="100px" height="75px" class="trigger" id="22' . $Image->name . '" src="'.JURI::root().'images/properties/images/thumbs/' . $this->item->id . '/' . $Image->name . '" />';
+					echo '<img width="100px" height="75px" class="trigger" id="22' . $Image->image . '" src="'.JURI::root().'images/properties/images/' . $this->item->id . '/' . $Image->image . '" />';
 echo '</div>';	
 ?>
 
@@ -255,7 +255,7 @@ echo '</div>';
         			<tbody>
                     <tr class="borrarr">
         				<th>
-                        <input type="checkbox" name="deleteimage[<?php echo $Image->name;?>]" id="deleteimage<?php echo $Image->name;?>"  />
+                        <input type="checkbox" name="deleteimage[<?php echo $Image->image;?>]" id="deleteimage<?php echo $Image->image;?>"  />
                         </th>
         				<td>
                      <?php echo JText::_('Select to delete this image');?>

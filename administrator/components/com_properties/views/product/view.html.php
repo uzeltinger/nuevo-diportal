@@ -231,7 +231,7 @@ window.addEvent(\'domready\', function() {
 	$db 	= JFactory::getDBO();	
 	$query = ' SELECT i.* '			
 			. ' FROM #__properties_images as i '					
-			. ' WHERE i.published = 1 AND i.parent = '.$id			
+			. ' WHERE i.pro_id = '.$id			
 			. ' order by i.ordering ';		
         $db->setQuery($query);
 		$Images = $db->loadObjectList();

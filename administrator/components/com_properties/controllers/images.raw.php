@@ -41,7 +41,7 @@ function save_images_files()
 	$path_images = JPATH_SITE.'/images/properties/';
 	$path_image = JPATH_SITE.'/images/properties/images/';
 	$path = JPATH_SITE.'/'.'images'.'/'.'properties'.'/'.'images'.'/'.$idproduct;
-	$paththumbs = JPATH_SITE.'/'.'images'.'/'.'properties'.'/'.'images'.'/'.'thumbs'.'/'.$idproduct;				
+	//$paththumbs = JPATH_SITE.'/'.'images'.'/'.'properties'.'/'.'images'.'/'.'thumbs'.'/'.$idproduct;				
 	
 	if(!JFolder::exists($path_images))
 		{
@@ -70,21 +70,16 @@ function save_images_files()
 		$fileExt = JFile::getExt($file['name']);
 		
 		$postI['id'] = '';				
-		$postI['name'] = 'reemplazar';
+		$postI['image'] = 'reemplazar';
 		$postI['alias'] = '';
-		$postI['parent'] = $idproduct;
-		$postI['published'] = 1;
+		$postI['pro_id'] = $idproduct;
 		$postI['ordering'] = 0;
-		$postI['type'] = $fileExt;
-		$postI['name_image'] = '';
-		$postI['date'] = date('Y-m-d H:i:s');
-		$postI['uid'] = $user->id;		
 
 		if ($imageSaved = $model->store($postI)) 
 			{
 			$fileName = $imageSaved->id.'_'.$idproduct.'.'.$fileExt;
 			$postI['id'] = $imageSaved->id;
-			$postI['name'] = $fileName;
+			$postI['image'] = $fileName;
 			
 			$model->store($postI);
 			}else{
@@ -112,10 +107,10 @@ function save_images_files()
 				
 
 
-		$this->watermark_image($imagenGuardada, $path_images.'watermark.png', $imagenGuardada, $fileExt);
+		//$this->watermark_image($imagenGuardada, $path_images.'watermark.png', $imagenGuardada, $fileExt);
 
 		$thumb=	$paththumbs.'/'.$fileName;
-		$this->CambiarTamano($imagenGuardada,200,150,$thumb);		
+		//$this->CambiarTamano($imagenGuardada,200,150,$thumb);		
 		}
 $msg = 'Images saved';
 $this->setRedirect( 'index.php?option=com_properties&view=product&layout=edit&id='.$idproduct, $msg );

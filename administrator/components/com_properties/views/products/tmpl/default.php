@@ -118,7 +118,7 @@ $ordering	= ($listOrder == 'ordering');
 $row = &$this->items[$i];
 $link 		= JRoute::_( 'index.php?option=com_properties&task=product.edit&id='.(int) $item->id);	
 		?>
-        <tr class="row<?php echo $i % 2; ?>" sortable-group-id="<?php echo $row->parent != 0 ? $row->parent:999; ?>">
+        <tr class="row<?php echo $i % 2; ?>" sortable-group-id="999">
 			<td class="order nowrap center hidden-phone">  
             
             <?php
@@ -148,7 +148,7 @@ $link 		= JRoute::_( 'index.php?option=com_properties&task=product.edit&id='.(in
             <?php  
 			if(isset($this->Images[$item->id]))
 			{
-			$img_path = JURI::root().'images/properties/images/thumbs/'.$row->id.'/'.$this->Images[$item->id]->image;
+			$img_path = JURI::root().'images/properties/images/'.$row->id.'/'.$this->Images[$item->id]->image;
 			?>			
             <img width="60" src="<?php echo $img_path;?>" />			
             <?php } ?>            	

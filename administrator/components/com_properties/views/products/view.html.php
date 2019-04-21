@@ -127,6 +127,18 @@ class PropertiesViewProducts extends JViewLegacy
 	{	
 	$db 	= JFactory::getDBO();	
 	$query = ' SELECT i.* '			
+			. ' FROM #__properties_images as i '					
+			. ' WHERE i.pro_id = '.$id			
+			. ' order by i.ordering limit 1';		
+        $db->setQuery($query);  
+		$Images = $db->loadObject();
+	return $Images;
+	}	
+
+	function getImages2222($id,$total=1)
+	{	
+	$db 	= JFactory::getDBO();	
+	$query = ' SELECT i.* '			
 			. ' FROM #__properties_images_1 as i '					
 			. ' WHERE i.pro_id = '.$id			
 			. ' order by i.ordering limit 100';		
